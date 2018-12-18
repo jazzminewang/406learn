@@ -1,0 +1,14 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ponynote</title>
+  </head>
+  <body>
+    <div id="root"> <!--mounting point of our react application-->
+    </div>
+      {% render_bundle 'main' %} <!--renders script tag for bundle named main which is produced by our webpack config-->
+  </body>
+</html>
